@@ -1,17 +1,7 @@
-//import {} from ?
+
 import STORE from './store'
 
 var ACTION = {
-	fetchFinished: function(){
-		//instance : new collection??
-		//var promise = instance.fetch()
-		//promise.then(function(){
-			STORE.set({
-				//collection: instance,
-				//get something here?
-			})
-		// })
-	},
 
 	recordLaundryDone: function(){
 		var currentLaundry = STORE.data.laundry;

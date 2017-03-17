@@ -24,7 +24,7 @@ var Stats = React.createClass({
 
 var ChoreView = React.createClass({
 	componentWillMount: function(){
-		//ACTION.fetchFinished() -> we don't need to fetch from an API, because there is no API
+	
 		STORE.on('dataUpdated', () => {
 			this.setState(STORE.data)
 		})
@@ -55,7 +55,7 @@ var ChoreView = React.createClass({
 	},
 
 	getInitialState: function(){
-		return STORE.data // get latest data
+		return STORE.data 
 	},
 	render: function(){		
 		return (
